@@ -1,0 +1,233 @@
+/* stylelint-disable no-missing-end-of-source-newline */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url(https://media.istockphoto.com/photos/pattern-of-books-in-different-positions-and-located-in-the-part-of-picture-id1320488856?b=1&k=20&m=1320488856&s=170667a&w=0&h=AN3klZUZTu_pGxAl-h-dfTyD1KeEAkjd3Ax-JtS2zPM=) no-repeat;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* Header  */
+
+.top-header {
+  position: relative;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  margin: 10px 15px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(236, 209, 173, 0.808);
+}
+
+.top_title {
+  font-family: 'Square Peg', cursive;
+  font-size: 2.5rem;
+}
+
+.right-side a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 0 10px;
+  color: black;
+  border-right: 1px solid black;
+  padding-right: 10px;
+}
+
+.right-side a:last-child {
+  border: none;
+}
+
+.right-side a:focus {
+  color: rgb(18, 20, 156);
+}
+
+.clock {
+  position: absolute;
+  right: 1.5%;
+}
+
+/* Stores books styles */
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.block h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.block h1 span {
+  color: aqua;
+}
+
+.book-list {
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.book-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+  width: 95vw;
+}
+
+.back-gray {
+  background-color: rgba(68, 65, 65, 0.336);
+}
+
+.books_store {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.books_store p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.remove {
+  padding: 5px 10px;
+}
+
+.border-width {
+  height: 5px;
+  width: 200px;
+  background-color: #000;
+  margin: 25px auto;
+  border-radius: 20%;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.close-icon {
+  display: none;
+}
+
+/* styling form section */
+
+.form-section {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.add-book h3 {
+  text-align: center;
+  margin: 50px 0 70px 0;
+}
+
+.add-book h3 span {
+  color: aqua;
+}
+
+.add-book input {
+  margin: 5px;
+  padding: 10px 100px 10px 20px;
+}
+
+.add-btn {
+  padding: 6px;
+  margin-left: 250px;
+}
+
+/* Styling Contact section */
+
+.contact_section {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.contact_title {
+  margin: 50px 0;
+}
+
+.text-contact {
+  margin-bottom: 30px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.text-contact span {
+  display: block;
+}
+
+li {
+  margin-left: 30px;
+}
+
+/* footer */
+
+.footer {
+  position: absolute;
+  bottom: 3%;
+  border: 2px solid black;
+  width: 98vw;
+  margin: 0 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 796px) {
+  .nav_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 10px 15px;
+    border-radius: 10px;
+    width: 95%;
+    padding: 10px;
+    background-color: rgba(236, 209, 173, 0.808);
+  }
+
+  .left-side {
+    display: none;
+  }
+
+  .right-side a {
+    font-size: 1.1rem;
+    margin: 0 5px;
+  }
+
+  .book-class {
+    width: 95vw;
+  }
+
+  .add-book input {
+    padding: 8px 50px 8px 15px;
+  }
+
+  .add-btn {
+    padding: 4px;
+    margin-left: 200px;
+  }
+}
