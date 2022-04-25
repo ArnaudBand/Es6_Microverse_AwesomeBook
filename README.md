@@ -32,7 +32,7 @@ Clone repo: [Github](https://github.com/ArnaudBand/Es6_Microverse_AwesomeBook.gi
 
 ### Deployment live
 
-[live Demo](https://arnaudband.github.io/Arnaud-Vincent-Awesome_books/)
+[live Demo](https://arnaudband.github.io/Es6_Microverse_AwesomeBook/)
 
 
 ## Author
