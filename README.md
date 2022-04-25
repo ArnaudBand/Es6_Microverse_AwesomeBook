@@ -39,7 +39,7 @@ Clone repo: [Github](https://github.com/ArnaudBand/Es6_Microverse_AwesomeBook.gi
 
 👤 **Author1**
 
-- GitHub: [@githubArnaud](https://github.com/B77748)
+- GitHub: [@githubArnaud](https://github.com/arnaudband)
 - Twitter: [@twitterArnaud](https://twitter.com/@ba104781)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/arnaud-bandonkeye-893a2b228/)
 
