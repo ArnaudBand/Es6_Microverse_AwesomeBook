@@ -156,6 +156,13 @@ h3 {
   margin-left: 250px;
 }
 
+.added_book {
+  text-align: center;
+  font-family: 'Square Peg', cursive;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
 /* Styling Contact section */
 
 .contact_section {
