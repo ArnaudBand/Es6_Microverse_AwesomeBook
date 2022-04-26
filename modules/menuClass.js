@@ -1,6 +1,9 @@
 import {
-  blockDisplay, formSection, contactSection, bookTitle, bookAuthor, form, bookList,
+  blockDisplay, formSection, contactSection, bookTitle, bookAuthor, form, bookList, addedBook,
 } from './variables.js';
+
+// eslint-disable-next-line import/no-cycle
+import UI from './displayBook.js';
 
 export const listBtn = document.querySelector('.list-btn');
 export const addBtn1 = document.querySelector('.adde-btn-1');
@@ -23,9 +26,7 @@ export const displayContact = () => {
   formSection.style.display = 'none';
 };
 
-/* eslint-disable keyword-spacing */
-
-class Library {
+export default class Library {
   constructor() {
     this.collection = [];
   }
@@ -64,48 +65,17 @@ function Book(title, author) {
 
 //  Class UI helps to display and remove books
 
-function UI() {}
-
-UI.prototype.displayBook = (newBook) => {
-  Library.collection.forEach((book, index) => {
-    if (book.title === newBook.title) {
-      if(index % 2 === 0) {
-        bookList.innerHTML += `
-        <div class="book-class back-gray">
-          <div class="books_store">
-            <p>${newBook.title}</p>
-            <p>&nbsp by ${newBook.author}</p>
-          </div>
-          <button class='remove' type='button'>Remove</button>
-        </div>
-        
-        `;
-      } else {
-        bookList.innerHTML += `
-        <div class="book-class">
-          <div class="books_store">
-            <p>${newBook.title}</p>
-            <p>&nbsp by ${newBook.author}</p>
-          </div>
-          <button class='remove' type='button'>Remove</button>
-        </div>
-        
-        `;
-      }
-    }
-  });
-};
-
-UI.prototype.deleteInput = (book1, book2) => {
-  book1.value = '';
-  book2.value = '';
-};
-
-UI.prototype.deleteBook = (target) => {
-  target.parentElement.remove();
-};
-
 const newDisplay = new UI();
+
+// Message added Book
+
+const addBookMsg = () => {
+  addedBook.textContent = 'New book added';
+  addedBook.style.visibility = 'visible';
+  setTimeout(() => {
+    addedBook.style.visibility = 'hidden';
+  }, 2000);
+};
 
 // AddBook function: to add books to our page in the storage and change them into objects.
 
@@ -119,6 +89,7 @@ const addBook = (e) => {
 
   newDisplay.displayBook(newBook);
   newDisplay.deleteInput(bookTitle, bookAuthor);
+  addBookMsg();
 
   e.preventDefault();
 };
@@ -130,8 +101,7 @@ const removeBook = (e) => {
     newDisplay.deleteBook(e.target);
     Library.removeABook(e.target);
 
-    // eslint-disable-next-line no-restricted-globals
-    location.reload();
+    window.location.reload();
   }
 };
 

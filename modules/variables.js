@@ -6,3 +6,4 @@ export const bookTitle = document.querySelector('.title');
 export const bookAuthor = document.querySelector('.author');
 export const form = document.querySelector('.add-book');
 export const bookList = document.querySelector('.book-list');
+export const addedBook = document.querySelector('.added_book');
