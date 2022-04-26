@@ -22,7 +22,7 @@ In this project, you will take the Awesome books application and convert it into
 
 ### Prerequisites
 
-Clone repo: [Github](https://github.com/ArnaudBand/Es6_Microverse_AwesomeBook.git)
+Clone repo: `https://github.com/ArnaudBand/Es6_Microverse_AwesomeBook.git`
 
 ### Setup Node.js
 
