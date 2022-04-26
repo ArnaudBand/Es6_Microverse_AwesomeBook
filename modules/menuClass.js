@@ -71,9 +71,9 @@ const newDisplay = new UI();
 
 const addBookMsg = () => {
   addedBook.textContent = 'New book added';
-  addedBook.style.visibility = 'visible';
+  addedBook.style.display = 'block';
   setTimeout(() => {
-    addedBook.style.visibility = 'hidden';
+    addedBook.style.display = 'none';
   }, 2000);
 };
 
