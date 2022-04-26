@@ -17,5 +17,4 @@ const timer = () => {
   clockDisplay.innerText = `${today.toLocaleString(DateTime.DATETIME_FULL)}`;
 };
 
-timer();
-setInterval(() => { timer(); }, 1000);
+setInterval(timer, 1000);
