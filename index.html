@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <!-- Google icons link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="./index.css">
+    <title>Awesome</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="top-header">
+      <div class="menu-icon">
+        <i class="material-icons" id="menu-icon">menu</i>
+      </div>
+      <nav class="nav_bar">
+        
+        <div class="close-icon">
+          <i class="material-icons" id="close-icon">close</i>
+        </div>
+        <div class="left-side">
+          <h3 class="top_title">Awesome books</h3>
+        </div>
+        <div class="right-side">
+          <a href="#" class="list-btn">List</a>
+          <a href="#" class="adde-btn-1">Add new book</a>
+          <a href="#" class="contact-btn">Contact</a>
+        </div>
+      </nav>
+      <div class="clock"></div>
+    </header>
+    <!-- Stores books section -->
+    <section class="block">
+      <h1><span>A</span>ll awesome boo<span>ks</span></h1>
+      <div class="book-list"></div>
+      <div class="border-width"></div>
+    </section>
+    
+    <!-- Input section -->
+    <section id="add" class="form-section">
+      <form action="#" class="add-book">
+        <h3>Add a <span>new</span> book</h3>
+        <p class="added_book"></p>
+        <div>
+          <input type="text" class="title" placeholder="Title" required />
+        </div>
+        <div>
+          <input type="text" class="author" placeholder="Author" required/>
+        </div>
+        <button class="add-btn" type="submit">
+          Add
+        </button>
+      </form>
+    </section>
+
+    <!-- Contact section -->
+
+    <section class="contact_section">
+      <h3 class="contact_title">Contact Information</h3>
+      <p class="text-contact">
+        Do you have any question or you just want to say "hello"? <span> You can reach out to us!</span>
+      </p>
+
+      <ul>
+        <li>Our e-mail: mail@mail.com</li>
+        <li>Our phone number: 004426718003</li>
+        <li>Our address: Streetname 22, 84503 City, Country.</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="text_footer"><b>Copyright</b>  &nbsp;&copy;&nbsp;Design by Arnaud and Vincent April, 2022</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
